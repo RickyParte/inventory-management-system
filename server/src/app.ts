@@ -10,7 +10,7 @@ const app: Application = express();
 app.use(express.json());
 app.use(morgan('dev'));
 
-app.use(cors({ origin: ['http://localhost:5173', 'https://inventory-navy.vercel.app', 'http://13.203.79.177:5173'] }));
+app.use(cors({ origin: ['http://localhost:5173', 'https://inventory-navy.vercel.app', 'http://3.111.139.9:5173'] }));
 
 // application routes
 app.use('/api/v1', rootRouter);
