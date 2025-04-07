@@ -4,7 +4,7 @@ import { logoutUser } from "../services/authSlice";
 import { RootState } from "../store";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'http://3.111.139.9:3000/api/v1',
+  baseUrl: 'http://3.111.139.9:8000/api/v1',
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token
 
